@@ -1,2 +1,4 @@
 # Dot-Minion-Game
-Simple 2D Android Game
+
+Source code from my Android game.
+Code is horribly commented
