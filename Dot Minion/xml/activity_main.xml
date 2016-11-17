@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:weightSum="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:orientation="vertical"
+        android:keepScreenOn="true"
+        android:windowActionBar="false"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        style="AppCompat.Light.NoActionBar.Fullscreen">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:paddingBottom="0dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/title"
+        android:background="@drawable/dots_background"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/helpButton"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_weight="0"
+        android:id="@+id/helpButton"
+        android:background="#00000000"
+        android:onClick="goToInstructions"
+        android:src="@drawable/help_button"
+        android:layout_above="@+id/startButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_weight="0"
+        android:id="@+id/startButton"
+        android:background="#00000000"
+        android:onClick="launchGame"
+        android:src="@drawable/start_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

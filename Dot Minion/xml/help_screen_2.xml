@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:weightSum="9"
+        android:background="#ffffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:orientation="vertical"
+        android:keepScreenOn="true"
+        android:windowActionBar="false"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        style="AppCompat.Light.NoActionBar.Fullscreen"
+        tools:context=".SplashScreen"
+
+    android:transitionGroup="false">
+
+
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/normal_player"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:id="@+id/imageView3"
+
+        android:src="@drawable/green_dot"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/red_dot"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:padding="20dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/instructions2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/letsPlayButton" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_weight="0"
+        android:id="@+id/letsPlayButton"
+        android:background="#00000000"
+        android:onClick="returnToMenu"
+        android:src="@drawable/lets_play_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
